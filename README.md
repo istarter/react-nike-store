@@ -3,7 +3,6 @@
 ## Demo link
 http://nike-clone-najeeb.surge.sh/
 
-I
 
 ### `npm start`
 
