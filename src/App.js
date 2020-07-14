@@ -1,20 +1,22 @@
-import React, { Component } from 'react'
-import {BrowserRouter as Router} from 'react-router-dom';
-import Header from './components/Header';
-import Section from './components/Section';
-
+import React, { Component } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Header from "./components/Header";
+import Section from "./components/Section";
+import { DataProvider } from "./components/Context";
 
 export class App extends Component {
   render() {
     return (
-      <div className="app">
-       <Router>
-         <Header />
-         <Section />
-       </Router>
-      </div>
-    )
+      <DataProvider>
+        <div className="app">
+          <Router>
+            <Header />
+            <Section />
+          </Router>
+        </div>
+      </DataProvider>
+    );
   }
 }
 
-export default App
+export default App;
